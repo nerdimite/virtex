@@ -11,7 +11,7 @@ import pandas as pd
 from tf_pose.estimator import TfPoseEstimator
 from tf_pose.networks import get_graph_path, model_wh
 
-from grid_pixel_search import grid_coords, grid_pixel_search, draw_grid
+from utils import grid_coords, grid_pixel_search, draw_grid
 
 logger = logging.getLogger('TfPoseEstimator-WebCam')
 logger.setLevel(logging.DEBUG)
@@ -109,17 +109,17 @@ if __name__ == '__main__':
     if filename == 'null':
         fnum = 0
         while True:
-            fn = 'pose_train-{}.csv'.format(fnum)
+            fn = '{}-{}.csv'.format(args.pose,fnum)
             dir = os.path.join(data_path,fn)
             if os.path.isfile(dir):
                 print('File exists, moving along pose_train-{}.csv'.format(fnum))
                 fnum += 1
             else:
-                print('Creating new file pose_train-{}.csv'.format(fnum))
+                print('Creating new file {}-{}.csv'.format(args.pose,fnum))
                 filename = fn
                 break
 
     file_dir = os.path.join(data_path,filename)
     pose_dataset.insert(18,'Pose',args.pose)
-    pose_dataset.to_csv(file_dir)
+    pose_dataset.to_csv(file_dir, index=False)
     cv2.destroyAllWindows()
