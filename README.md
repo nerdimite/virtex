@@ -6,7 +6,7 @@ You can train on images having those poses or you can also train for poses in re
 implements XG Boost Classifier by default but can be changed to your own classification model.
 
 ## To Do
-- [ ] Real Time Training Data Generator Script
+- [x] Real Time Training Data Generator Script
 - [ ] Training Data Generator from a folder containing images
 - [ ] Classifier Training script
 - [ ] Classifier Prediction in Real-Time/Image/Folder-of-Images
