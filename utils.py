@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
 import pandas as pd
+import pickle
 
 def combine_poses(*args):
     '''
@@ -16,9 +17,6 @@ def combine_poses(*args):
         p = pd.read_csv(df)
         poseset = pd.concat([poseset,p])
     return poseset
-
-def chk_typ(obj, req_type):
-    return req_type == type(obj)
 
 def grid_coords(resolution,image):
 
@@ -78,3 +76,14 @@ def draw_grid(image, grid_x, grid_y):
         cv.line(image, (int(round(xp)), 0), (int(round(xp)), image.shape[0]), (0, 0, 255), 1, 1)
     for yp in grid_y:
         cv.line(image, (0, int(round(yp))), (image.shape[1], int(round(yp))), (0, 0, 255), 1, 1)
+
+def load_obj(file):
+    with open(file, 'rb') as f:
+        return pickle.load(f)
+
+def save_obj(obj,filepath):
+    with open(filepath, 'wb') as f:
+        pickle.dump(obj, f)
+
+def chk_typ(obj, req_type):
+    return req_type == type(obj)
