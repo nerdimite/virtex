@@ -2,6 +2,8 @@ import argparse
 import logging
 import time
 
+import os
+
 import cv2
 import numpy as np
 import pandas as pd
@@ -39,8 +41,10 @@ if __name__ == '__main__':
                         help='for debug purpose, if enabled, speed for inference is dropped.')
 
     parser.add_argument('--tensorrt', type=str, default="False", help='for tensorrt process.')
-    parser.add_argument('--pose', type=str, default="Nameless Pose", help='the name of the pose for which training data is being generated')
-    parser.add_argument('--nb-data', type=int, default=10, help='number of training entries to record for training each pose')
+    parser.add_argument('--pose', type=str, default="Some Pose", help='the name of the pose for which training data is being generated')
+    parser.add_argument('--nb-data', type=int, default=100, help='number of training entries to record for training each pose')
+    parser.add_argument('--save-to', type=str, default='./data/', help='the directory where the data will be saved')
+    parser.add_argument('--save-as', type=str, default='null', help='save the csv data file to')
     args = parser.parse_args()
 
     logger.debug('initialization %s : %s' % (args.model, get_graph_path(args.model)))
@@ -93,6 +97,29 @@ if __name__ == '__main__':
             break
         logger.debug('finished+')
 
+    data_path = args.save_to
+    filename = args.save_as
+
+    if os.path.isdir(data_path):
+        pass
+    else:
+        os.makedirs(data_path)
+
+
+    if filename == 'null':
+        fnum = 0
+        while True:
+            fn = 'pose_train-{}.csv'.format(fnum)
+            dir = os.path.join(data_path,fn)
+            if os.path.isfile(dir):
+                print('File exists, moving along pose_train-{}.csv'.format(fnum))
+                fnum += 1
+            else:
+                print('Creating new file pose_train-{}.csv'.format(fnum))
+                filename = fn
+                break
+
+    file_dir = os.path.join(data_path,filename)
     pose_dataset.insert(18,'Pose',args.pose)
-    pose_dataset.to_csv('test_run.csv')
+    pose_dataset.to_csv(file_dir)
     cv2.destroyAllWindows()
