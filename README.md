@@ -5,7 +5,11 @@ Virtex is an easy to use wrapper for pose estimation which lets you not only est
 You can train on images having those poses or you can also train for poses in real time using the webcam. The classifier
 implements XG Boost Classifier by default but can be changed to your own classification model.
 
+<<<<<<< HEAD
 Test for Pull 3
+=======
+Test for Pull 2
+>>>>>>> 357c48ffdc194dc6d4299a92ddb5bff4104a627f
 
 ## To Do
 - [x] Real Time Training Data Generator Script
