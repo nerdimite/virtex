@@ -12,3 +12,6 @@ implements XG Boost Classifier by default but can be changed to your own classif
 - [x] Classifier Prediction in Real-Time
 - [ ] Programmatic API
 - [ ] Documentation
+
+## References
+* Pose Estimation Code https://github.com/ildoonet/tf-pose-estimation/
