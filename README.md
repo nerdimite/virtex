@@ -1,7 +1,7 @@
 # Virtex
-## Easy Pose Recognition
+## End-to-End Pose Recognition
 
-Virtex is an easy to use wrapper for pose estimation which lets you not only estimate the pose but classify the poses.
+Virtex is an easy to use wrapper for pose recognition which lets you estimate the pose and classify the poses.
 You can train on images having those poses or you can also train for poses in real time using the webcam. The classifier
 implements XG Boost Classifier by default but can be changed to your own classification model.
 
@@ -12,3 +12,6 @@ implements XG Boost Classifier by default but can be changed to your own classif
 - [x] Classifier Prediction in Real-Time
 - [ ] Programmatic API
 - [ ] Documentation
+
+## References
+* Pose Estimation Code https://github.com/ildoonet/tf-pose-estimation/
