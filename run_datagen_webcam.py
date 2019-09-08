@@ -76,7 +76,7 @@ if __name__ == '__main__':
         logger.debug('postprocess+')
         image, centers = TfPoseEstimator.draw_humans(image, humans, imgcopy=False)
 
-        # Cam res 640x480
+        # Pose Analysis
         res = 100
         gx, gy, gpw, gph = grid_coords(res,image)
         #draw_grid(image,gx,gy)
