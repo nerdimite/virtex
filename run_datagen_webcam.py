@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--tensorrt', type=str, default="False", help='for tensorrt process.')
     parser.add_argument('--pose', type=str, default="Some Pose", help='the name of the pose for which training data is being generated')
-    parser.add_argument('--nb-data', type=int, default=100, help='number of training entries to record for training each pose')
+    parser.add_argument('--nb-frames', type=int, default=1000, help='number of training entries to record for training each pose')
     parser.add_argument('--save-to', type=str, default='./data/', help='the directory where the data will be saved')
     parser.add_argument('--save-as', type=str, default='null', help='save the csv data file to')
     args = parser.parse_args()
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         return df
 
     n = 0
-    while (n < (args.nb_data)):
+    while (n < (args.nb_frames)):
         n += 1
 
         ret_val, image = cam.read()

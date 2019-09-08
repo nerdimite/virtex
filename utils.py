@@ -16,6 +16,8 @@ def combine_poses(*args):
     for df in args:
         p = pd.read_csv(df)
         poseset = pd.concat([poseset,p])
+    poseset = poseset.sample(frac=1).reset_index(drop=True)
+    
     return poseset
 
 def grid_coords(resolution,image):
