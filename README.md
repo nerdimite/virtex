@@ -85,7 +85,7 @@ The `generate_data()` function returns the individual pose's csv files ready to 
 Usage:
 
 from api import generate_data
-generate_data($PARAMETERS)
+generate_data(PARAMETERS)
 
 Docstring:
     Saves the data of a single pose as a separate csv file which can be later used for preprocessing
@@ -111,7 +111,7 @@ the csv files into a single dataframe. This can be achieved using the `combine_p
 Usage:
 
 from utils import combine_poses
-dataframe = combine_poses($PARAMETERS)
+dataframe = combine_poses(PARAMETERS)
 
 Docstring:
     RETURNS the dataframe containing all the poses' data
@@ -131,7 +131,7 @@ the mapping from encoded label to string label (eg: {0:'pose-1', 1: 'pose-2'}).
 Usage:
 
 from api import preprocess_data
-x_train, y_train, classes = preprocess_data($PARAMETERS)
+x_train, y_train, classes = preprocess_data(PARAMETERS)
 
 Docstring:
     RETURNS two arrays, x and y from the dataset and a dictionary, classes which is a mapping
@@ -152,7 +152,7 @@ The training process is as simple as a single line of code. Currently, the API h
 Usage:
 
 from api import train_classifier
-classifier = train_classifier($PARAMETERS)
+classifier = train_classifier(PARAMETERS)
 
 Docstring:
     RETURNS trained model
@@ -168,7 +168,7 @@ The accuracy of the trained model can be obtained by the `cross_val()` function 
 ```python
 Usage:
 from api import cross_val
-acc_mean, acc_std = cross_val($PARAMETERS)
+acc_mean, acc_std = cross_val(PARAMETERS)
 
 Docstring:
     RETURNS two float values of mean accuracy and standard deviation
@@ -188,7 +188,7 @@ inferencing on a batch of images, the results are saved for you in a csv file co
 ```python
 Usage:
 from api import predict
-predict($PARAMETERS)
+predict(PARAMETERS)
 
 Docstring:
     Predicts the poses in realtime or on a batch of images
@@ -219,5 +219,5 @@ based scripts. The following scripts are available with CLI:
 
 <a name="ref"/>
 
-### Reference
+### References
 * Pose Estimation Code https://github.com/ildoonet/tf-pose-estimation/
