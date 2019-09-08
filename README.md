@@ -10,7 +10,7 @@ implements XG Boost Classifier by default but can be changed to your own classif
 - [x] Training Data Generator from a folder containing images
 - [x] Classifier Training script
 - [x] Classifier Prediction in Real-Time
-- [ ] Programmatic API
+- [x] Programmatic API
 - [ ] Documentation
 
 ## References
