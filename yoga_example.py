@@ -17,4 +17,4 @@ classifier = train_classifier(x_train, y_train, 'yoga')
 acc_mean, acc_std = cross_val(classifier,x_train,y_train)
 print(acc_mean,acc_std)
 
-save_obj(classes, './classifiers/yoga.cls')
+save_obj(classes, '.yoga_example/classifiers/yoga.cls')
