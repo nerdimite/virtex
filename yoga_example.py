@@ -10,7 +10,7 @@ An Example Program to train on Yoga Poses
 '''
 
 dataset = combine_poses('./yoga_example/data/plank-0.csv','./yoga_example/data/tree-0.csv')
-x_train, x_test, y_train, y_test, classes = preprocess_data(dataset)
+x_train, y_train, classes = preprocess_data(dataset)
 
 classifier = train_classifier(x_train, y_train, 'yoga')
 

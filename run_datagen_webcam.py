@@ -27,7 +27,7 @@ def str2bool(v):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='tf-pose-estimation realtime webcam')
+    parser = argparse.ArgumentParser(description='virtex data generator in realtime')
     parser.add_argument('--camera', type=int, default=0)
 
     parser.add_argument('--resize', type=str, default='0x0',

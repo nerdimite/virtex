@@ -28,7 +28,7 @@ def str2bool(v):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='tf-pose-estimation realtime webcam')
+    parser = argparse.ArgumentParser(description='virtex data generator from directory')
     parser.add_argument('--folder', type=str, default='./images/', help='folder containing the input images to be traine upon')
 
     parser.add_argument('--resize', type=str, default='0x0',

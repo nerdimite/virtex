@@ -9,7 +9,7 @@ import pandas as pd
 from tf_pose.estimator import TfPoseEstimator
 from tf_pose.networks import get_graph_path, model_wh
 
-from grid_pixel_search import grid_coords, grid_pixel_search, draw_grid
+from utils import grid_coords, grid_pixel_search, draw_grid
 
 logger = logging.getLogger('TfPoseEstimator-WebCam')
 logger.setLevel(logging.DEBUG)
