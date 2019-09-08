@@ -17,7 +17,7 @@ def combine_poses(*args):
         p = pd.read_csv(df)
         poseset = pd.concat([poseset,p])
     poseset = poseset.sample(frac=1).reset_index(drop=True)
-    
+
     return poseset
 
 def grid_coords(resolution,image):
@@ -80,12 +80,22 @@ def draw_grid(image, grid_x, grid_y):
         cv.line(image, (0, int(round(yp))), (image.shape[1], int(round(yp))), (0, 0, 255), 1, 1)
 
 def load_obj(file):
+    '''
+    RETURNS object saved with pickle
+
+    PARAMETERS:
+    file :- the path to the saved pickle object
+    '''
     with open(file, 'rb') as f:
         return pickle.load(f)
 
 def save_obj(obj,filepath):
+    '''
+    Saves object using pickle
+
+    PARAMETERS:
+    obj :- the object that you want to save
+    filepath :- the path of file where you want to save the object
+    '''
     with open(filepath, 'wb') as f:
         pickle.dump(obj, f)
-
-def chk_typ(obj, req_type):
-    return req_type == type(obj)
