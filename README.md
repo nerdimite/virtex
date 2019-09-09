@@ -24,6 +24,14 @@ implements XG Boost Classifier by default but can be changed to your own classif
 
 #### Install
 
+You need following dependencies
+
+- python 3
+- tensorflow 1.4.1 and above
+- opencv3, protobuf, python3-tk
+- slidingwindow
+- xgboost
+
 Clone the repo and install 3rd-party libraries.
 
 ```bash
