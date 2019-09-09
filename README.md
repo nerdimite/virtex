@@ -16,6 +16,7 @@ implements XG Boost Classifier to train and make predictions
     * [Inference](#pred)
 * [Documentation (CLI)](#clidocs)
 * [Future Updates](#feat)
+* [Contribute](#ctrbte)
 * [References](#ref)
 
 <a name="install"/>
@@ -229,10 +230,17 @@ based scripts. The following scripts are available with CLI:
 ### Future Updates
 
 - More Classifiers (SVM, DNN)
+- Inference Logging and continuous training to decrease prediction fluctuations during inference and increase stability and overall performance
 - Support for Continuous Actions using LSTMs
 - Hand Gesture Recognition
 - Tracking specific Tagged Persons using Face Recognition
 - 3D Pose
+
+<a name="ctrbte"/>
+
+### Contribute
+
+Feel free to contribute to this project and help improve it. Raise issues if you find any bugs or have any suggestions. Make pull requests to help develop it further and fix bugs. Also, you can feel free to contact me at my email bhavesh.laddagiri1@gmail.com or [instagram](https://www.instagram.com/nerdimite/) or [facebook](https://www.facebook.com/bhavesh.laddagiri)
 
 <a name="ref"/>
 
