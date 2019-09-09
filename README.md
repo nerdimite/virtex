@@ -1,7 +1,7 @@
 # Virtex
 ## End-to-End Pose Recognition
 
-Virtex is an easy to use API for pose recognition which lets you estimate and classify the poses.
+Virtex is an easy to use API for pose recognition, built on top of PoseNet, which lets you estimate and classify the poses.
 You can train on images having those poses or you can also train for poses in real time using the webcam. The classifier
 implements XG Boost Classifier by default but can be changed to your own classification model.
 
