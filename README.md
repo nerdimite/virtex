@@ -71,8 +71,7 @@ $ bash download.sh
 
 ### Tutorial
 
-A blog post detailing the usage of Virtex will be linked soon. By that time you can refer [`sample.py`](https://github.com/Nerdimite37/virtex/blob/master/sample.py) for an example of how to use virtex and yes it is documented
-line by line so hopefully you will be able to understand it easily.
+I have written a [blog post on medium](https://medium.com/@bhavesh.laddagiri1/how-to-implement-pose-recognition-in-10-lines-of-code-using-virtex-9bd26cf451db) detailing on the usage of Virtex for realtime pose recognition. Make sure you check it out. Also, the Jupyter Notebook associated with the blog can be found [here](https://github.com/Nerdimite37/virtex/blob/master/Tutorial.ipynb)
 
 <a name="apidocs"/>
 
