@@ -94,7 +94,7 @@ if __name__ == '__main__':
 
         logger.debug('show+')
         cv2.putText(image,
-                    "FPS: {}\nPose: {}".format((1.0 / (time.time() - fps_time)), nm_pose),
+                    "FPS: {} Pose: {}".format((1.0 / (time.time() - fps_time)), nm_pose),
                     (10, 10),  cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                     (0, 255, 0), 2)
         cv2.imshow('tf-pose-estimation result', image)
