@@ -15,6 +15,7 @@ implements XG Boost Classifier by default but can be changed to your own classif
     * [Training](#train)
     * [Inference](#pred)
 * [Documentation (CLI)](#clidocs)
+* [Future Updates](#feat)
 * [References](#ref)
 
 <a name="install"/>
@@ -216,6 +217,14 @@ based scripts. The following scripts are available with CLI:
 - run_train_classifier.py
 - run_predict_directory.py
 - run_predict_webcam.py
+
+### Future Updates
+
+- More Classifiers (SVM, DNN)
+- Support for Continuous Actions using LSTMs
+- Hand Gesture Recognition
+- Tracking specific Tagged Persons using Face Recognition
+- 3D Pose
 
 <a name="ref"/>
 
