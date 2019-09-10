@@ -13,7 +13,7 @@ from tf_pose.networks import get_graph_path, model_wh
 
 from utils import grid_coords, grid_pixel_search, draw_grid, save_obj, load_obj
 
-logger = logging.getLogger('TfPoseEstimator-WebCam')
+logger = logging.getLogger('Virtex')
 logger.setLevel(logging.DEBUG)
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
 
         logger.debug('show+')
-        cv2.imshow('tf-pose-estimation result', image)
+        cv2.imshow('Virtex Inference', image)
         cv2.waitKey(3)
         logger.debug('finished+')
 

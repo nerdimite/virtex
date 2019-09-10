@@ -12,7 +12,7 @@ from tf_pose.networks import get_graph_path, model_wh
 
 from utils import grid_coords, grid_pixel_search, draw_grid, load_obj
 
-logger = logging.getLogger('TfPoseEstimator-WebCam')
+logger = logging.getLogger('Virtex')
 logger.setLevel(logging.DEBUG)
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
@@ -97,7 +97,7 @@ if __name__ == '__main__':
                     "FPS: {} Pose: {}".format((1.0 / (time.time() - fps_time)), nm_pose),
                     (10, 10),  cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                     (0, 255, 0), 2)
-        cv2.imshow('tf-pose-estimation result', image)
+        cv2.imshow('Virtex Inference', image)
         fps_time = time.time()
         if cv2.waitKey(1) == 27:
             break
