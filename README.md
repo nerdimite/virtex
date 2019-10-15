@@ -1,4 +1,4 @@
-# Virtex
+# Virtex 1.0
 ## End-to-End Pose Recognition
 
 Virtex is an easy to use API for pose recognition, built on top of this awesome person's [tf_pose_estimation](https://github.com/ildoonet/tf-pose-estimation), which lets you estimate and classify the poses.
