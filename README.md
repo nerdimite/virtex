@@ -37,11 +37,11 @@ You need following dependencies
 Clone the repo and install 3rd-party libraries.
 
 ```bash
-$ git clone https://github.com/Nerdimite37/virtex.git
+$ git clone https://github.com/theneuralbeing/virtex.git
 $ cd virtex
 $ pip3 install -r requirements.txt
 ```
-Build c++ library for post processing. See : https://github.com/Nerdimite37/virtex/tree/master/tf_pose/pafprocess
+Build c++ library for post processing. See : https://github.com/theneuralbeing/virtex/tree/master/tf_pose/pafprocess
 ```
 $ cd tf_pose/pafprocess
 $ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
@@ -49,7 +49,7 @@ $ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
 Alternatively, you can install this repo as a shared package using pip.
 
 ```bash
-$ git clone https://github.com/Nerdimite37/virtex.git
+$ git clone https://github.com/theneuralbeing/virtex.git
 $ cd virtex
 $ python setup.py install  # Or, `pip install -e .`
 ```
@@ -72,7 +72,7 @@ $ bash download.sh
 
 ### Tutorial
 
-I have written a [blog post on medium](https://medium.com/@bhavesh.laddagiri1/how-to-implement-pose-recognition-in-10-lines-of-code-using-virtex-9bd26cf451db) detailing on the usage of Virtex for realtime pose recognition. Make sure you check it out. Also, the Jupyter Notebook associated with the blog can be found [here](https://github.com/Nerdimite37/virtex/blob/master/Tutorial.ipynb)
+I have written a [blog post on medium](https://medium.com/@bhavesh.laddagiri1/how-to-implement-pose-recognition-in-10-lines-of-code-using-virtex-9bd26cf451db) detailing on the usage of Virtex for realtime pose recognition. Make sure you check it out. Also, the Jupyter Notebook associated with the blog can be found [here](https://github.com/theneuralbeing/virtex/blob/master/Tutorial.ipynb)
 
 <a name="apidocs"/>
 
