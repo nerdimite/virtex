@@ -1,3 +1,4 @@
+# Depracated- Virtex 2.0 coming soon as Presense with more plug-n-play computer vision tools
 # Virtex 1.0
 ## End-to-End Pose Recognition
 
